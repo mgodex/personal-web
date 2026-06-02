@@ -1,0 +1,29 @@
+steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 1. 设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # 或者你需要的 Node 版本
+          cache: 'npm'
+
+      # 2. 安装依赖并运行 Gulp 构建
+      - name: Install dependencies & Build
+        run: |
+          npm install
+          npx gulp # 或者你在 package.json 中配置的 npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # 指向 Gulp 编译输出的静态文件夹（假设是 release）
+          path: './release'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
