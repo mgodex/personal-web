@@ -1,5 +1,4 @@
-# release/
+release/
 node_modules/
 *.log
 .idea
-package-lock.json
