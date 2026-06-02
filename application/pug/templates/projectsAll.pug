@@ -1,0 +1,26 @@
+.template.color-red(data-template='projectsAll')
+  
+  //- MAIN
+  main
+    .h1
+      span
+      span #[mark latest projects]
+    .small
+      span These are some projects I'm proud of creating,
+      span contributing, or being part of.
+    
+    //- LIST
+    ul.list.blocks
+      +listItem('Feb 14, 2017', 'mGod', 'https://github.com/mgodex')
+      +listItem('May 24, 2018', 'mGod', 'https://github.com/mgodex')
+      +listItem('Mar 29, 2018', 'mGod', 'https://github.com/mgodex')
+      +listItem('Jul 26, 2018', 'mGod', 'https://github.com/mgodex')
+      +listItem('Feb 20, 2017', 'mGod', 'https://github.com/mgodex')
+      +listItem('Sep 14, 2018', 'mGod', 'https://github.com/mgodex')
+      +listItem('Apr 18, 2018', 'mGod', 'https://github.com/mgodex')
+      +listItem('Jan 25, 2016', 'mGod', 'https://github.com/mgodex')
+      +listItem('Dec 18, 2015', 'mGod', 'https://github.com/mgodex')
+      +listItem('Mar 23, 2016', 'mGod', 'https://github.com/mgodex')
+      +listItem('Oct 01, 2017', 'mGod', 'https://github.com/mgodex')
+    
+    .links: a.link.router(href='#' title='Back to home') Back to home

@@ -1,0 +1,18 @@
+.template.color-blue(data-template='thoughtsAll')
+  
+  //- MAIN
+  main
+    .h1
+      span
+      span #[mark my thoughts]
+    .small
+      span Here is where I write about my breakups, about my
+      span experiences, and about my failures.
+    
+    //- LIST
+    ul.list.blocks
+      +listItem('Feb 6, 2019', 'Try not to be ashamed', 'https://github.com/mgodex')
+      +listItem('Jan 22, 2019', 'You don\'t have to come along', 'https://github.com/mgodex')
+      +listItem('Dec 31, 2018', 'My 2018 achievements', 'https://github.com/mgodex')
+    
+    .links: a.link.router(href='#' title='Back to home') Back to home

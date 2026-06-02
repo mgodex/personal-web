@@ -1,0 +1,35 @@
+.template.color-yellow(data-template='bucketAll')
+  
+  //- MAIN
+  main
+    .h1
+      span
+      span #[mark bucket list]
+    .small
+      span Please don’t tell this to anyone.. This list got stolen
+      span from an idiot I knew. Any problems?
+    
+    //- LIST
+    ul.list.blocks
+      +pending('01', 'Find the one and only girl I’ll spend my entire life with')
+      +archived('May 9, 2020', 'Have the courage to tell the girl I like that I like her', 'http://crush.yahiarefaiea.com')
+      +pending('03', 'Ditch my wedding, and travel somewhere instead')
+      +pending('04', 'Visit all 14 Syrian governorates')
+      +pending('05', 'Record a documentary about some part of my life')
+      +archived('Nov 12, 2018', 'Get my work nominated for Website Of The Day', 'https://twitter.com/YahiaRefaiea/status/1061944244519297030')
+      +next('Own my first Website Of The Day')
+      +pending('08', 'Own my first Website Of The Month')
+      +pending('09', 'Own my first Website Of The Year')
+      +pending('10', 'Be Designer Of The Year')
+      +pending('11', 'Teach 20 homeless how to code and change their lives')
+      +pending('12', 'Visit the Hogwarts School of Witchcraft and Wizardry')
+      +archived('Sep 20, 2017', 'Watch Harry Potter’s movies all at once without sleeping', 'https://www.facebook.com/events/125212944878228/permalink/125215144878008/')
+      +archived('Sep 21, 2018', 'Have a pet', 'https://www.facebook.com/YahiaRefaiea/posts/1090008704488683')
+      +pending('15', 'Have a monkey')
+      +pending('16', 'Have a baby lion')
+      +pending('17', 'Play with a baby panda')
+      +archived('Mar 23, 2016', '30 day doodle to illustrator', 'https://www.facebook.com/YahiaRefaiea/media_set?set=a.542222899267269&type=3')
+      +archived('Oct 31, 2017', 'Do Inktober drawing challenge', 'https://www.facebook.com/YahiaRefaiea/media_set?set=a.867667380056151&type=3')
+      +pending('20', 'Read the license for all the softwares I usually use')
+    
+    .links: a.link.router(href='#' title='Back to home') Back to home
